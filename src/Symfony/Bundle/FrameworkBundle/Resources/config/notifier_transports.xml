@@ -42,6 +42,10 @@
             <tag name="texter.transport_factory" />
         </service>
 
+        <service id="notifier.transport_factory.spothit" class="Symfony\Component\Notifier\Bridge\SpotHit\SpotHitTransportFactory" parent="notifier.transport_factory.abstract">
+            <tag name="texter.transport_factory" />
+        </service>
+
         <service id="notifier.transport_factory.ovhcloud" class="Symfony\Component\Notifier\Bridge\OvhCloud\OvhCloudTransportFactory" parent="notifier.transport_factory.abstract">
             <tag name="texter.transport_factory" />
         </service>

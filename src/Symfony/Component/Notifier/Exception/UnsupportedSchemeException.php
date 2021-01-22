@@ -54,6 +54,10 @@ class UnsupportedSchemeException extends LogicException
             'class' => Bridge\FreeMobile\FreeMobileTransportFactory::class,
             'package' => 'symfony/free-mobile-notifier',
         ],
+        'spothit' => [
+            'class' => Bridge\SpotHit\SpotHitTransportFactory::class,
+            'package' => 'symfony/spot-hit-notifier',
+        ],
         'ovhcloud' => [
             'class' => Bridge\OvhCloud\OvhCloudTransportFactory::class,
             'package' => 'symfony/ovh-cloud-notifier',

@@ -101,6 +101,7 @@ use Symfony\Component\Notifier\Bridge\OvhCloud\OvhCloudTransportFactory;
 use Symfony\Component\Notifier\Bridge\RocketChat\RocketChatTransportFactory;
 use Symfony\Component\Notifier\Bridge\Sinch\SinchTransportFactory;
 use Symfony\Component\Notifier\Bridge\Slack\SlackTransportFactory;
+use Symfony\Component\Notifier\Bridge\SpotHit\SpotHitTransportFactory;
 use Symfony\Component\Notifier\Bridge\Telegram\TelegramTransportFactory;
 use Symfony\Component\Notifier\Bridge\Twilio\TwilioTransportFactory;
 use Symfony\Component\Notifier\Notifier;
@@ -2060,6 +2061,7 @@ class FrameworkExtension extends Extension
             TwilioTransportFactory::class => 'notifier.transport_factory.twilio',
             FirebaseTransportFactory::class => 'notifier.transport_factory.firebase',
             FreeMobileTransportFactory::class => 'notifier.transport_factory.freemobile',
+            SpotHitTransportFactory::class => 'notifier.transport_factory.spothit',
             OvhCloudTransportFactory::class => 'notifier.transport_factory.ovhcloud',
             SinchTransportFactory::class => 'notifier.transport_factory.sinch',
         ];
